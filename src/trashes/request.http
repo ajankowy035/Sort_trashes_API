@@ -1,0 +1,27 @@
+### New product
+POST http://localhost:4040/trashes/new
+content-type: application/json
+
+{
+   "name": "Plastic"
+}
+
+### All trashes
+
+GET http://localhost:4040/trashes
+
+### Delete trash
+DELETE http://localhost:4040/trashes/61edb6b8282d11269a494488
+
+### Change name
+
+PATCH http://localhost:4040/trashes
+Content-Type: application/json
+
+{
+   "id": "61edacb8282d11269a49447e",
+   "name": "paper"
+}
+
+### One trash
+GET http://localhost:4040/trashes/61ef134539b1ba5844e14558
