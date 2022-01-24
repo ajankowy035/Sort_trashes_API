@@ -1,0 +1,24 @@
+### New product### New product
+POST http://localhost:4040/products/new
+content-type: application/json
+
+{
+   "name": "paper cub",
+   "trash": "61edacb8282d11269a49447e"
+}
+
+### All products
+GET http://localhost:4040/products
+
+### One product
+GET http://localhost:4040/products/61edb704282d11269a49448a
+
+### Update Trash
+
+PATCH http://localhost:4040/products
+content-type: application/json
+
+{
+    "id": "61ef0b4c948dba15bea016d8",
+    "trash": "61ef134d39b1ba5844e1455a"
+}
