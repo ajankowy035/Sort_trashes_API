@@ -1,5 +1,4 @@
-1. In root directory create .env file with MONGO_URI (Mongo DB link)
-2. Run with npm run dev:start
+In root directory create .env file with MONGO_URI (Mongo DB link)
 
 ## Description
 
