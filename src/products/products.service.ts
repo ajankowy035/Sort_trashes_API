@@ -23,7 +23,7 @@ export class ProductsService {
     };
 
     async findOne(id: string): Promise<Product> {
-        return this.productModel.findOne({ _id: id });
+        return this.productModel.findOne({ _id: id }).populate('trash');
     };
 
     async updateTrash(id: string, trash: string): Promise<Product> {
