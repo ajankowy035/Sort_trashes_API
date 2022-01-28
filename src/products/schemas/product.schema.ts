@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import * as mongoose from 'mongoose';
-import { Trash } from 'src/trashes/schema/trash.schema';
+import { Trash } from '../../trashes/schema/trash.schema';
 
 export type ProductDocument = Product & mongoose.Document;
 
