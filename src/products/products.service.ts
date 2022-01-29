@@ -15,7 +15,7 @@ export class ProductsService {
     };
 
     async findAll(): Promise<Product[]> {
-        return this.productModel.find().exec();
+        return this.productModel.find().populate('trash');
     };
 
     async delete(id: string): Promise<Product> {
